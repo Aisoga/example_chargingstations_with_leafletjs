@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>JavaScript Example without Frameworks</title>
+
+        <!-- Leaflet CSS and JS files -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <!-- Our CSS -->
+        <link rel="stylesheet" href="./css/map.css"/>
+
+    </head>
+
+    <body>
+        <!-- The div where we will inject our map -->
+        <div id="map"></div>
+
+        <!-- Our filters -->
+        <div id="filters">
+            <select id="roads" name="roads"></select>
+            <button id="loadRoads" name="loadRoads" onclick="fetchRoadData()">Reload Roads</button>
+            <button id="request" name="request" style="display: none" disabled onclick="fetchChargingStationData()">Show</button>
+        </div>
+
+        <!-- Our JavaScript -->
+        <script src="./js/map.js"></script>
+    </body>
+</html>

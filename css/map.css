@@ -1,0 +1,12 @@
+#map {
+    height: 100%;
+}
+
+#filters {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 12px;
+    background-color: white;
+}
